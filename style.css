@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Spartan:100,200,300,regular,500,600,700,800,900);
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-size: 15px;
+    font-family: "Spartan", sans-serif;
+    box-sizing: border-box;
+
+}
+
+.flex-container {
+    text-align: center;
+    margin:100px;
+
+}
+
+.container-1 {
+    color: hsl(300, 43%, 22%);
+  
+}
+.header {
+    
+}
+
+.star-ratings {
+    display:flex;
+    flex-direction: column;
+
+}
+.rating {
+    margin-bottom: 20px;
+    background-color:hsl(300, 24%, 96%);
+    padding:20px;
+}
+
+.reviews-container {
+
+}
+
+.review {
+    /*display:flex; */
+    background-color: hsl(300, 43%, 22%);
+    color:white;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding:30px;
+    margin-top:20px;
+    line-height: 2;
+}
+
+.info {
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+img {
+    border-radius:100px;
+    height:45px;
+}
+.name {
+    font-weight: 700;
+}
+.title {
+    color:hsl(333, 80%, 67%);
+}
+
+@media only screen and (min-width: 1400px) {
+    .flex-container {
+       
+        
+    }
+
+    .container-1 {
+        display:flex;
+        justify-content:space-evenly;
+    }
+
+    .header {
+        flex: 1
+    }
+
+    .star-ratings {
+        flex:1;
+    }
+
+    .reviews-container {
+        display:flex;
+    }
+  
+    }
+  
+
+
+
