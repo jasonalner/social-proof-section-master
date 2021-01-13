@@ -1,17 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Spartan:100,200,300,regular,500,600,700,800,900);
-
+html {
+}
 body {
+    display:flex;
     margin: 0;
     padding: 20px;
     font-size: 15px;
     font-family: "Spartan", sans-serif;
     box-sizing: border-box;
+    max-width: 375px;
+    justify-content: center;
+    align-items: center;
+    text-align:center;  
+}
 
+h3 {
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .flex-container {
     text-align: center;
-    margin:100px;
+    margin:auto;
+    width:375px;
 
 }
 
@@ -26,12 +37,22 @@ body {
 .star-ratings {
     display:flex;
     flex-direction: column;
+    font-weight: 700;
+    border-radius:15px;
+    text-align: center;
 
 }
 .rating {
     margin-bottom: 20px;
     background-color:hsl(300, 24%, 96%);
     padding:20px;
+    border-radius:12px;
+    justify-content: center;
+}
+
+.star-ratings img {
+    width:15px;
+    height:auto;
 }
 
 .reviews-container {
@@ -39,14 +60,14 @@ body {
 }
 
 .review {
-    /*display:flex; */
     background-color: hsl(300, 43%, 22%);
     color:white;
     border-radius: 15px;
     border: 1px solid white;
     padding:30px;
-    margin-top:20px;
+    margin:20px;
     line-height: 2;
+    text-align:left;
 }
 
 .info {
@@ -67,8 +88,16 @@ img {
 }
 
 @media only screen and (min-width: 1400px) {
-    .flex-container {
-       
+    body {
+        background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+        max-width:1440px;
+    }
+    .container {
+       text-align: left;
+       margin:auto;
+       max-width:1200px;
         
     }
 
@@ -83,10 +112,38 @@ img {
 
     .star-ratings {
         flex:1;
+        display: flex;
     }
 
+    .rating {
+        width:450px;
+        display:flex;
+
+    }
+
+    .rating-1 {
+        align-self: flex-start;
+    }
+    
+    .rating-2 {
+        align-self: center;
+    }
+    
+    .rating-3 {
+        align-self:flex-end;
+    }
     .reviews-container {
         display:flex;
+    }
+
+    .review-1 {
+        align-items:flex-start;
+    }
+    .review-2 {
+        align-items:center;
+    }
+    .review-3 {
+        align-items:flex-end;
     }
   
     }
