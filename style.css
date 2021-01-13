@@ -103,7 +103,7 @@ img {
 
     .container-1 {
         display:flex;
-        justify-content:space-evenly;
+        justify-content:space-between;
     }
 
     .header {
@@ -134,6 +134,7 @@ img {
     }
     .reviews-container {
         display:flex;
+        justify-content: space-between;
     }
 
     .review-1 {
@@ -148,6 +149,13 @@ img {
   
     }
   
+    @media only screen and (min-width: 1400px){
+
+        body {
+            max-width: 600px;
+        }
+
+    }
 
 
 
