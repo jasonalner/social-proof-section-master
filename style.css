@@ -123,7 +123,6 @@ h3 {
         text-align: left;
         max-width:1200px;
         height: auto;
-        margin-top:150px;
     }
 
     .container-1 {
@@ -137,7 +136,7 @@ h3 {
     }
 
     h1 {
-        font-size:40px;
+        font-size:50px;
         margin: 0px 160px 10px 0px;        
     }
 
@@ -179,7 +178,7 @@ h3 {
     .container-2 {
         display:flex;
         flex:1;
-        height: 400px;   
+        height: 400px; 
     }
 
     .review {
